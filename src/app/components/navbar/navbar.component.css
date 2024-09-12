@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+}
+.navbar {
+    background-color: #6a0dad; 
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#navbarNav{
+    height: 30px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 40px;
+}
+
+#h1-nav{
+    font-family: "Satisfy", cursive;
+}
+    
+a {
+text-decoration: none; 
+color: inherit; 
+}
+
+a:hover {
+text-decoration: none;
+}
+.navbar-nav {
+display: flex;
+flex-direction: row;
+list-style: none;
+}
+
+.navbar-nav .nav-link {
+color: white;
+margin: 40px;
+padding: 10px 25px;
+}
+
+.navbar-nav .nav-link:hover {
+background-color: rgba(223, 223, 223, 0.842);
+color: #6a0dad;
+border-radius: 5px;
+}
+
+.navbar-toggler {
+border: none;
+}
+
+.navbar-toggler:focus {
+outline: none;
+box-shadow: none;
+}
+
+
+*{
+    margin: 0;
+}
+.navbar {
+    background-color: #6a0dad; 
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#navbarNav{
+    height: 50px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 40px;
+}
+
+.navbar-brand h1 {
+    padding: 25px;
+    color: white;
+}
+    
+a {
+text-decoration: none; 
+color: inherit; 
+}
+
+a:hover {
+text-decoration: none;
+}
+.navbar-nav {
+display: flex;
+flex-direction: row;
+list-style: none;
+}
+
+.navbar-nav .nav-link {
+color: white;
+margin: 40px;
+padding: 10px 25px;
+}
+
+.navbar-nav .nav-link:hover {
+background-color: rgba(223, 223, 223, 0.842);
+color: #6a0dad;
+border-radius: 5px;
+}
+
+.navbar-toggler {
+border: none;
+}
+
+.navbar-toggler:focus {
+outline: none;
+box-shadow: none;
+}

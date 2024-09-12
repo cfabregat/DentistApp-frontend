@@ -1,0 +1,26 @@
+<div class="pacientes">
+    <h1>Lista de Pacientes</h1>
+
+
+    <table class="tabla-pacientes">
+        <thead>
+            <tr>
+                <th scope="col">Dni</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Fecha Consuta</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @for (paciente of Pacientes; track paciente.dni) {
+            <tr>
+                <th scope="row">{{paciente.dni}}</th>
+                <td>{{paciente.nombre}} {{paciente.apellido}}</td>
+                <td>{{paciente.fecha_cons}}</td>
+                <td><button type="button" [routerLink]="['/pacientes',paciente.dni]">Detalles</button> </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

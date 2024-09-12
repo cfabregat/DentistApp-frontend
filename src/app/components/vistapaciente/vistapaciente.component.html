@@ -1,0 +1,57 @@
+@if(loading){
+    <h5> Loading...</h5>
+    }
+    
+    
+    @if(!loading){
+    <div class="Vista-paciente" *ngIf="paciente">
+        <h1>Información del paciente</h1>
+        <div class="Info-del-paciente">
+            <div>
+                <label>Nombre:</label>
+                <span>{{ paciente.nombre }}</span>
+            </div>
+            <div>
+                <label>Edad:</label>
+                <span>{{ paciente.edad }}</span>
+            </div>
+            <div>
+                <label>DNI:</label>
+                <span>{{ paciente.dni }}</span>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <span>{{ paciente.genero }}</span>
+            </div>
+        </div>
+    
+        <h2>Consulta Médica</h2>
+        <table class="Historia-Medica">
+            <thead>
+                <tr>
+                    <th>Fecha de Consulta</th>
+                    <th>Razón de Consulta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ paciente.fecha_cons }}</td>
+                    <td>{{ paciente.razon_cons }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h5>Diagnóstico</h5>
+                        <div class="diagnostico">{{paciente.diagnostico}}</div> <br> <!-- Aca muestro los datos de la api -->
+                        <textarea type="text" [(ngModel)]="nuevoDiagnostico" placeholder="PUEDES EDITAR EL DIAGNOSTICO AQUI!!!!"></textarea> <!-- Aca puedo poner otros datos en el div y se guardan como infomacion en la api-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn-guardar" type="button" 
+                            (click)="actualizarCambios(paciente.dni,nuevoDiagnostico)"> Guardar </button><!-- Ejecuta el envio de datos -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    }

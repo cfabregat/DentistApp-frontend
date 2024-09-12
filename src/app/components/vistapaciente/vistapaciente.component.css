@@ -1,0 +1,83 @@
+h1,
+h2 {
+  color: black;
+  text-align: center;
+}
+
+h5 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Vista-paciente {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: powderblue;
+}
+
+.Info-del-paciente {
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.Info-del-paciente div {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 22px;
+}
+
+.Info-del-paciente label {
+  font-weight: bold;
+  color: blue;
+}
+
+.Historia-Medica {
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid blue;
+}
+
+th,td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+th {
+  background-color: gray;
+  color: white;
+}
+
+.diagnostico {
+  background-color: lavender;
+  border: 2px solid black;
+  padding: 5px;
+  font-weight: normal;
+  height: 200px;
+  width: 770px;
+  word-break: normal;
+  overflow:auto;
+}
+
+textarea{
+  width: 770px;
+  height: 80px;
+  background-color: burlywood;
+  padding: 12px;
+  color: black;
+  overflow:auto;
+}

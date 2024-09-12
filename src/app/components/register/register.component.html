@@ -1,0 +1,160 @@
+<div class="registro-paciente">
+    <h1>Registro del Paciente</h1>
+    <form (submit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            [(ngModel)]="user.nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            [(ngModel)]="user.apellido"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="user.email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            [(ngModel)]="user.telefono"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            [(ngModel)]="user.fechaNacimiento"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="dni">DNI:</label>
+          <input
+            type="text"
+            id="dni"
+            name="dni"
+            [(ngModel)]="user.dni"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="genero">Género:</label>
+          <select id="genero" name="genero" [(ngModel)]="user.genero" required>
+            <option value="" disabled selected hidden>Seleccionar</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="usuario">¿Usuario?:</label>
+          <select id="usuario" name="usuario" [(ngModel)]="user.usuario" required>
+            <option value="" disabled selected hidden>Seleccionar</option>
+            <option value="secretaria">Secretaria</option>
+            <option value="doctor">Doctor/a</option>
+            <option value="paciente">Paciente</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cobertura">¿Tiene cobertura?:</label>
+          <option value="" disabled selected hidden>Seleccionar</option>
+          <select
+            id="cobertura"
+            name="cobertura"
+            [(ngModel)]="user.cobertura"
+            required
+          >
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fechaNacimiento">Turno:</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            [(ngModel)]="user.fecha_cons"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Razón de Consulta:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            [(ngModel)]="user.razon_cons"
+            width="auto"
+          />
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#registerModal"
+      >
+        Registrar
+      </button>
+  
+      <div
+        class="modal fade"
+        id="registerModal"
+        tabindex="-1"
+        aria-labelledby="registerModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-center fs-4">Datos enviados</div>
+            <div class="modal-footer">
+              <!-- <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Aceptar
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  
